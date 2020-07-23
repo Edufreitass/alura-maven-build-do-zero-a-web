@@ -77,6 +77,23 @@
 
 `$ mvn package`
 
+- Para empacotar(criar um jar) e pular os testes
+
+`$ mvn -DskipTests=true package`
+
 - Para rodar o jar empacotado com a classe main App.java
 
 `$ java -cp produtos-1.0-SNAPSHOT.jar br.com.alura.maven.App`
+
+- Para gerar um relatorio que analisa o codigo fonte e verifica possiveis margens de bug no codigo
+
+`$ mvn pmd:pmd`
+
+- Falha na compilação se houver alguma violação do PMD no código-fonte
+
+`$ mvn pmd:check`
+
+- Para receber uma lista completa de metas e parâmetros disponíveis(plugin do jacoco)
+
+`$ mvn jacoco:help`
+
