@@ -104,3 +104,15 @@
 Para rodar o Jetty
 
 `$ mvn jetty:run` 
+
+Gera um pacote **war** para o projeto web
+
+`$ mvn package`
+
+Para listar os arquivos existentes nesse war
+
+`$ unzip -l lojaweb.war`
+
+Para apagar um diretório por completo
+
+`$ rm -fr produtos`
