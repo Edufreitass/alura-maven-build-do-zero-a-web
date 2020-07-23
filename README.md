@@ -42,7 +42,7 @@
 2° Passo: Configurar path(variaveis de ambiente) do maven para ser utilizado via terminal: 
 1. No windows digite no menu iniciar "Editar às variáveis de ambiente do sistema". 
 2. Depois vá em "variáveis de ambiente". 
-3. Variáveis de usuário para SEU_NOME_DE_USUARIO > Path > Editar > Novo e depois cole o endereço da pasta bin do maven > C:\apache-maven-3.6.3\bin
+3. Variáveis de usuário > Path > Editar > Novo e depois cole o endereço da pasta bin do maven, no meu caso > C:\apache-maven-3.6.3\bin
 
 	
 - Para gerar um projeto quickStart no maven
@@ -53,9 +53,17 @@
 
 `$ mvn compile`
 
+- Não verifica atualizaçoes na internet(offline)
+
+`$ mvn -o <comando>`
+
 - Para testar e baixar possiveis bibliotecas usadas no teste
 
 `$ mvn test`
+
+- Para testar e não verificar na internet atualizações da dependencia
+
+`$ mvn -o test`
 
 - Para limpar o projeto(exclui a pasta target)
 
